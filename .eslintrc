@@ -1,0 +1,32 @@
+{
+  "root": true,
+  "env": {
+    "es6": true,
+    "node": false,
+    "browser": true,
+    "jquery": true
+  },
+  "parser": "babel-eslint",
+  "globals": {
+    // "APP": true
+  },
+  "extends": [
+    // "airbnb-base",
+    // "prettier",
+    // "prettier/babel",
+    // "prettier/react"
+  ],
+  "rules": {
+    "func-names": [ "off" ],
+    "linebreak-style": [ "error", "unix" ],
+    "no-unused-vars": [ "error", { "args": "none" } ],
+    "no-console": [ "off" ],
+    "no-use-before-define": [ "off" ],
+    "vars-on-top": [ "off" ],
+    "no-underscore-dangle": [ "off" ],
+    "no-plusplus": [ "off" ],
+    "no-useless-concat": [ "off" ],
+    "spaced-comment": ["error", "always", { "markers": ["/"] }],
+    "no-param-reassign": ["error", { "props": false }]
+  }
+}
