@@ -35,6 +35,5 @@ function html() {
     )
     .pipe(gulp.dest(dest.root))
     .pipe(notify('HTML task complete'))
-  console.log('html done');
 }
 exports.html = html;

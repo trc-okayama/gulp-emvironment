@@ -36,7 +36,9 @@ function lint() {
 }
 
 function bundle() {
-  return webpackStream(webpackConfig, webpack)
+  return webpackStream(webpackConfig, webpack).on('error', function (e) {
+    this.emit('end')
+  })
     .pipe(plumberWithNotify())
     .pipe(cache('bundle'))
     .pipe(using())
@@ -44,7 +46,7 @@ function bundle() {
     .pipe(notify('JS task complete'));
 
 }
-function js(done){
+function js(done) {
   lint()
   bundle()
   done();
