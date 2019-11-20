@@ -11,7 +11,7 @@
     // "APP": true
   },
   "extends": [
-    // "airbnb-base",
+    // "airbnb-base"
     // "prettier",
     // "prettier/babel",
     // "prettier/react"
