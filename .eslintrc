@@ -11,10 +11,9 @@
     // "APP": true
   },
   "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
     // "airbnb-base"
-    // "prettier",
-    // "prettier/babel",
-    // "prettier/react"
   ],
   "rules": {
     "func-names": [ "off" ],
@@ -28,5 +27,10 @@
     "no-useless-concat": [ "off" ],
     "spaced-comment": ["error", "always", { "markers": ["/"] }],
     "no-param-reassign": ["error", { "props": false }]
+  },
+  "settings": {
+    "react": {
+        "version": "require('./package.json').dependencies.react"
+    }
   }
 }
