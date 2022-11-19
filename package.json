@@ -38,7 +38,7 @@
     "gulp-using": "^0.1.1",
     "require-dir": "^1.2.0",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
+    "webpack-cli": "^3.3.12",
     "webpack-stream": "^5.2.1"
   },
   "browserslist": [
